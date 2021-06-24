@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(#faf0e6, #deb887);
+    margin-bottom: 30px;
+  }
+
+.top img {
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    text-align: center ; 
+    padding-top:30px;
+}   
+
+p {
+    font-size: 15  px ;
+    text-align: center ;
+    margin-top:30px;
+}
+
+.menu {
+    list-style: none;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.menu li {
+    width: calc(100%/3);/*←画像を横に3つ並べる*/
+	padding:0 5px;/*←画像の左右に5pxの余白を入れる*/
+	box-sizing:border-box;
+    margin-bottom: 60px;
+}
+
+.menu li img{
+    max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+    width: 280px;
+    margin-top: 50px;
+}
+
+footer:before{
+    content:"";
+    position:absolute;
+    left:0;
+    display:block;
+    margin-top:-5px;
+    width:100%;
+    border-top:1px solid #8b4513;
+}   
+
+.footer-list ul{
+    text-align: center;
+	margin-left: -10px;
+	font-size: 0; /* タグ改行時の空白防止 */
+}
+
+.footer-list ul li {
+    display: inline-block;
+	margin-left: 10px;
+	font-size: 14px; /* ulでサイズ0にしたのを戻す */
+}
+
+.footer-list ul{
+    text-align: center;
+	margin-left: -10px;
+	letter-spacing: -.4em; /* タグ改行時の空白防止 */
+}
+
+.footer-list ul li {
+    list-style: none;
+    display: inline-block;
+	margin-left: 10px;
+	letter-spacing: normal; /* 元に戻す */
+    margin:10px;
+}
+
+.fa-twitter-square {color:#4682b4}
+.fa-instagram {color:#fa8072}
+
+.fab {
+    font-size: 50px;
+    text-decoration: none;
+  }
+
+  .fab:hover {
+    opacity: 0.6;
+  }
+
+.logo {
+    text-align: left;
+}
